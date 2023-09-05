@@ -71,10 +71,26 @@
   <!-- If we need navigation buttons -->
   <div class="swiper-button-prev"></div>
   <div class="swiper-button-next"></div>
+</div>
 
-  <!-- If we need scrollbar -->
+<div class="card">
+    <!--1º linha-->
+    <div class="descricao">
+        <h3 class="descricao__titulo">Talvez você</h3>
+        <h2 class="descricao__titulo">Angular</h2>
+        <p class="descricao__titulo">Contruindo uma</p>
+    </div>
+</div>
+  <!-- If we need scrollbar --> 
   <div class="swiper-scrollbar"></div>
 </div>
+<script src="https://unpkg.com/swiper@8/swiper-bundle.min.js"></script>
+<script>
+    const swiper = new Swiper('.swiper', {
+    spaceBetween: 10,
+    slidesPerview: 3,
+    });
+</script>
 </body>
 
 </html>
