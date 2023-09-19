@@ -60,9 +60,9 @@
   <!-- Additional required wrapper -->
   <div class="swiper-wrapper">
     <!-- Slides -->
-    <div class="swiper-slide">Slide 1</div>
-    <div class="swiper-slide">Slide 2</div>
-    <div class="swiper-slide">Slide 3</div>
+    <div class="swiper-slide"><img src="./img/Portugol.svg"></div>
+    <div class="swiper-slide"><img src="./img/ApacheKafka.svg"></div>
+    <div class="swiper-slide"><img src="./img/Javascript.svg"></div>
     ...
   </div>
   <!-- If we need pagination -->
@@ -71,10 +71,54 @@
   <!-- If we need navigation buttons -->
   <div class="swiper-button-prev"></div>
   <div class="swiper-button-next"></div>
+</div>
 
-  <!-- If we need scrollbar -->
+<div class="card">
+    <!--1º linha-->
+    <div class="descricao">
+        <h3 class="descricao__titulo">Talvez você</h3>
+        <h2 class="descricao__titulo">Angular</h2>
+        <p class="descricao__titulo">Contruindo uma aplicação integrada com a plataforma do Google.</p>
+    </div>
+</div>
+  <!-- If we need scrollbar --> 
   <div class="swiper-scrollbar"></div>
 </div>
+<script src="https://unpkg.com/swiper@8/swiper-bundle.min.js"></script>
+<script>
+    const swiper = new Swiper('.swiper', {
+    spaceBetween: 10,
+    slidesPerview: 3,
+    });
+</script>
 </body>
 
 </html>
+    <!--2º linha-->
+    <div class="card_botoẽs">
+        <!-- 1º coluna -->
+        <ul class="botões">
+            <li class="botões__item"><img src="img/Favoritos.svg" alt="Favoritar livro"></li>
+            <li class="botões__item"><img src="img/Compras.svg" alt="Adicionar no carrinho de compras"></li>
+            <!-- 2º coluna -->
+            <a href="#" class="botões__ancora">Saiba mais</a>
+        </div>
+    </div>
+  </section>
+  <section class="carrossel">
+    <h2 class="carrossel__titulo">Novos lançamentos</h2>
+    <!-- Slider main container -->
+    <div class="swiper">
+        <!-- Additional required wrapper -->
+        <!-- If we need pagination -->
+        <div class="swiper-pagination"></div>
+        
+        <!--Slides-->
+        <div class="swiper-slide"><img src="img/ApacheKafka.svg"
+            alt="Livro sobre apache kafka e spring boot da alura books"></div>
+        <div class="swiper-slide"><img src="img/Portugol.svg"
+            alt="Livro sobre Portugol em design da alura books"></div>
+
+        
+
+    </div>
